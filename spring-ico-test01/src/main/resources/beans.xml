@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置UserServiceImpl-->
+    <bean id="helloUserService" class="com.itheima.service.impl.UserServiceImpl">
+        <!--属性setUserDao-->
+        <property name="userDao" ref="helloUserDao"></property>
+    </bean>
+
+    <!--配置UserDaoImpl-->
+    <bean id="helloUserDao" class="com.itheima.dao.impl.UserDaoImpl"></bean>
+</beans>

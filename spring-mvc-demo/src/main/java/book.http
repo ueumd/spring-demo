@@ -1,0 +1,12 @@
+### BookController
+GET http://127.0.0.1:5173/books/getAlll
+
+###
+GET http://127.0.0.1:5173/books/getAllBook
+
+
+###
+GET http://127.0.0.1:5173/books/getBookById/1
+
+### 异常拦击
+GET http://127.0.0.1:5173/books/getBookByIdExcep/1

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloWorld" class="net.biancheng.c.impl.HelloWorld">
+        <property name="message" value="Hello World!" />
+    </bean>
+
+
+    <bean id="grade" class="net.biancheng.c.impl.Grade">
+        <constructor-arg name="gradeId" value="4"></constructor-arg>
+        <constructor-arg name="gradeName" value="一年级"></constructor-arg>
+    </bean>
+
+    <bean id="student" class="net.biancheng.c.impl.Student">
+        <constructor-arg name="id" value="2"></constructor-arg>
+        <constructor-arg name="name" value="李四"></constructor-arg>
+        <constructor-arg name="grade" ref="grade"></constructor-arg>
+    </bean>
+
+</beans>

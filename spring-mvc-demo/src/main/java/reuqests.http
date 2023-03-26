@@ -1,0 +1,58 @@
+### BookController
+GET http://127.0.0.1:5173/book/save
+
+### UserController
+GET http://127.0.0.1:5173/user/login?name=黑马程序员&id=1
+
+### POST请求中文乱码问题
+POST http://127.0.0.1:5173/test/getName
+Content-Type: application/x-www-form-urlencoded
+
+name=黑马程序员&id=999
+
+### url参数 与 方法接收参数名称不一样
+GET http://127.0.0.1:5173/test/diffName?name=黑马程序员&id=1
+
+### User类
+GET http://127.0.0.1:5173/test/userLogin?name=Tom&id=1&age=1
+
+### 数组参数
+GET http://127.0.0.1:5173/test/arrayParam?likes=game&likes=travle
+
+### 集合参数
+GET http://127.0.0.1:5173/test/listParam?likes=game&likes=travle
+
+### JSON请求
+POST http://127.0.0.1:5173/test/listParamJson
+Content-Type: application/json
+
+["game", "travle", "music"]
+
+### 返回JSON格式
+GET http://127.0.0.1:5173/test/hello
+
+
+### User类
+GET http://127.0.0.1:5173/test/userLogin2?name=Tom&id=100&age=1
+
+### JSON请求
+POST http://127.0.0.1:5173/test/userLoginJson
+Content-Type: application/json
+
+{
+  "name": "Tom",
+  "age": 1,
+  "id": 100,
+  "address": {
+    "province": "Shanghai",
+    "city": "Jingan"
+  }
+}
+
+
+### REST
+GET http://127.0.0.1:5173/test/user/100
+
+
+### getAll
+GET http://127.0.0.1:5173/books/getAll

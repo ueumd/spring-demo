@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--注解扫描-->
+    <context:component-scan base-package="net.biancheng.c.impl.lifeCycle"></context:component-scan>
+
+    <!--通过接口实现生命周期回调方法-->
+    <bean id="lifeCycleBean" class="net.biancheng.c.impl.lifeCycle.LifeCycleBean">
+        <property name="webName" value="C语言中文网"></property>
+        <property name="url" value="c.biancheng.net"></property>
+    </bean>
+
+
+    <!--通过 XML 配置指定生命周期回调方法-->
+    <bean id="lifeCycleBeanDemo" class="net.biancheng.c.impl.lifeCycle.LifeCycleBean" init-method="initMethod" destroy-method="destroyMethod">
+        <property name="webName" value="C语言中文网"></property>
+        <property name="url" value="c.biancheng.net"></property>
+    </bean>
+
+    <!--通过 XML 配置指定生命周期回调方法-->
+    <bean id="annotationLifeCycleBean" class="net.biancheng.c.impl.lifeCycle.AnnotationLifeCycleBean">
+        <constructor-arg name="webName" value="C语言中文网3"></constructor-arg>
+        <constructor-arg name="url" value="c.biancheng.net"></constructor-arg>
+    </bean>
+
+
+</beans>
