@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: MySpringDemo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myemployees?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: Abcdef@123456
+
+  # 关闭springboot启动banner
+  main:
+    banner-mode: "off"
+server:
+  port: 8091
+  servlet:
+    context-path: /api
+
+name: "Hello World!"
+
+person:
+  lastName: 张三111
+  age: 18
+  boss: false
+  birth: 1990/12/12
+  maps: { k1: v1, k2: 12 }
+  lists:
+    ‐ lisi
+    ‐ zhaoliu
+  dog:
+    name: 迪迪
+    age: 5
+
+person2:
+  lastName: 张三222
+  age: 18
+  boss: false
+  birth: 1990/12/12
+  maps: { k1: v1, k2: 12 }
+  lists:
+    ‐ lisi
+    ‐ zhaoliu
+  dog:
+    name: 迪迪
+    age: 5

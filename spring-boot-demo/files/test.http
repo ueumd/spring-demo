@@ -1,0 +1,19 @@
+GET http://localhost:8091/api/hello
+
+###
+GET http://localhost:8091/api/getPerson
+
+###
+GET http://localhost:8091/api/getPersonValue
+
+
+
+###
+GET http://localhost:8091/api/testHello
+
+
+###
+GET http://localhost:8091/api/testHello2
+
+###
+GET http://localhost:8091/api/testHello3
