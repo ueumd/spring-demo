@@ -1,14 +1,20 @@
 package com.ueumd.tech.controller.study;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloController {
+
+    // 读取yml配置
+    @Value("${spring.application.name}")
+    private String name;
+
     @ResponseBody
-    @GetMapping("/testHello")
-    public String testHello() {
-        return "hd! 700";
+    @GetMapping("/getProjectName")
+    public String getProjectName() {
+        return name;
     }
 
     @ResponseBody

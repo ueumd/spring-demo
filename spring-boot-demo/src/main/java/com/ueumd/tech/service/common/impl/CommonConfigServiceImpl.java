@@ -3,7 +3,7 @@ package com.ueumd.tech.service.common.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.ueumd.tech.entity.common.CommonConfig;
+import com.ueumd.tech.domain.common.CommonConfig;
 import com.ueumd.tech.mapper.common.CommonConfigMapper;
 import com.ueumd.tech.service.common.CommonConfigService;
 import org.springframework.stereotype.Service;

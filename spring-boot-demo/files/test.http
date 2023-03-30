@@ -1,19 +1,24 @@
-GET http://localhost:8091/api/hello
+### StudyController
+
+GET http://localhost:8091/api/getProjectName
 
 ###
 GET http://localhost:8091/api/getPerson
 
-###
-GET http://localhost:8091/api/getPersonValue
+
+### getAiRoleListPo
+GET http://localhost:8091/api/pojo/getAiRoleListPo
+
+### getAiRoleListPo
+GET http://localhost:8091/api/pojo/getAiRoleListVo
 
 
 
-###
-GET http://localhost:8091/api/testHello
 
+### =================================== commonController #########################
 
-###
-GET http://localhost:8091/api/testHello2
+### getSystemDate
+GET http://localhost:8091/api/common/v1/getSystemDate
 
-###
-GET http://localhost:8091/api/testHello3
+### getTopics
+GET http://localhost:8091/api/common/v1/getTopics?content=simple

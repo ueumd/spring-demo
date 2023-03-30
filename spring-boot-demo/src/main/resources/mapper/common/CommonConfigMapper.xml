@@ -3,7 +3,7 @@
 <mapper namespace="com.ueumd.tech.mapper.common.CommonConfigMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.ueumd.tech.entity.common.CommonConfig">
+    <resultMap id="BaseResultMap" type="com.ueumd.tech.domain.common.CommonConfig">
         <id column="id" property="id" />
         <result column="config_key" property="configKey" />
         <result column="remark" property="remark" />

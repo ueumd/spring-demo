@@ -1,10 +1,10 @@
-package com.ueumd.tech.vo;
+package com.ueumd.tech.entity;
 
 import lombok.Data;
 
 /**
  *
- * @author 夏鹏
+ * @author hsd
  * @since 2023-03-27
  */
 @Data

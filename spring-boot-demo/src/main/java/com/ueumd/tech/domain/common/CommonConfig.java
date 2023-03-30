@@ -1,4 +1,4 @@
-package com.ueumd.tech.entity.common;
+package com.ueumd.tech.domain.common;
 
 
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -15,7 +15,7 @@ import java.util.Date;
  * 键值对 存储数据结构
  * </p>
  *
- * @author 夏鹏
+ * @author hsd
  * @since 2023-03-24
  */
 @Data

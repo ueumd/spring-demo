@@ -1,6 +1,6 @@
 package com.ueumd.tech.service.ai;
 
-import com.ueumd.tech.vo.AiTopicListVO;
+import com.ueumd.tech.entity.AiTopicListVO;
 
 import java.util.List;
 

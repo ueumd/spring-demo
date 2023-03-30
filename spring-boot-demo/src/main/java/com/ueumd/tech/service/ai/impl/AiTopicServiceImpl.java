@@ -2,10 +2,10 @@ package com.ueumd.tech.service.ai.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.ueumd.tech.entity.ai.AiTopic;
+import com.ueumd.tech.domain.ai.AiTopic;
 import com.ueumd.tech.mapper.ai.AiTopicMapper;
 import com.ueumd.tech.service.ai.IAiTopicService;
-import com.ueumd.tech.vo.AiTopicListVO;
+import com.ueumd.tech.entity.AiTopicListVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 

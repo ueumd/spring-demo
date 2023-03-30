@@ -3,7 +3,7 @@
 <mapper namespace="com.ueumd.tech.mapper.ai.AiTopicMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.ueumd.tech.entity.ai.AiTopic">
+    <resultMap id="BaseResultMap" type="com.ueumd.tech.domain.ai.AiTopic">
         <id column="id" property="id" />
         <result column="icon" property="icon" />
         <result column="content" property="content" />

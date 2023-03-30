@@ -1,7 +1,8 @@
 package com.ueumd.tech.service.ai;
 
 
-import com.ueumd.tech.vo.AiRoleListVO;
+import com.ueumd.tech.entity.AiRoleListPo;
+import com.ueumd.tech.entity.AiRoleListVO;
 
 import java.util.List;
 
@@ -19,4 +20,5 @@ public interface IAiRoleService {
 
     List<AiRoleListVO> getAiRoleList();
 
+    List<AiRoleListPo> getAiRoleListPo();
 }

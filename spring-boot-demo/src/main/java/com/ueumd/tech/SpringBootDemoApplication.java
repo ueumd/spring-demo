@@ -10,8 +10,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class SpringBootDemoApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(SpringBootDemoApplication.class, args);
-        HelloController helloControllerBean = ctx.getBean(HelloController.class);
-        System.out.println("bean =====> " + helloControllerBean);
+        HelloController baan = ctx.getBean(HelloController.class);
+        System.out.println("bean =====> " + baan);
     }
 
 }

@@ -3,7 +3,7 @@
 <mapper namespace="com.ueumd.tech.mapper.ai.UserMessageRecordMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.ueumd.tech.entity.ai.UserMessageRecord">
+    <resultMap id="BaseResultMap" type="com.ueumd.tech.domain.ai.UserMessageRecord">
         <id column="id" property="id" />
         <result column="user_id" property="userId" />
         <result column="message" property="message" />

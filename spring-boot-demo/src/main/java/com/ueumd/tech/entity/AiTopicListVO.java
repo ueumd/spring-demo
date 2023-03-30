@@ -1,4 +1,4 @@
-package com.ueumd.tech.vo;
+package com.ueumd.tech.entity;
 
 import lombok.Data;
 

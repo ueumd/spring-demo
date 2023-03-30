@@ -1,4 +1,4 @@
-package com.ueumd.tech.entity.ai;
+package com.ueumd.tech.domain.ai;
 
 
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -11,40 +11,37 @@ import java.util.Date;
 
 /**
  * <p>
- * 用户消息记录表
+ * AI话题 配置表
  * </p>
  *
  * @author hsd
- * @since 2023-03-23
+ * @since 2023-03-28
  */
 @Data
-public class UserMessageRecord extends Model<UserMessageRecord> {
+public class AiTopic extends Model<AiTopic> {
 
     private static final long serialVersionUID = 1L;
 
 	@TableId(value="id", type= IdType.AUTO)
 	private Integer id;
     /**
-     * 用户ID
+     * 图标
      */
-	private Integer userId;
+	private String icon;
     /**
-     * 文本消息
+     * 内容
      */
-	private String message;
+	private String content;
+
+	/**
+	 * 级别
+	 */
+	private Integer level;
+
     /**
-     * 语音地址
-     */
-	private String audioUrl;
-    /**
-     * 语音时长（s）
-     */
-	private Integer timeDuration;
-    /**
-     * 发送时间
+     * 创建时间
      */
 	private Date createTime;
-
 
 	@Override
 	public Serializable pkVal() {

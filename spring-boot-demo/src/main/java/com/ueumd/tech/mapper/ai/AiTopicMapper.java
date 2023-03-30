@@ -1,7 +1,7 @@
 package com.ueumd.tech.mapper.ai;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ueumd.tech.entity.ai.AiTopic;
+import com.ueumd.tech.domain.ai.AiTopic;
 
 /**
  * <p>
