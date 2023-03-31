@@ -43,6 +43,8 @@ public class AiTopic extends Model<AiTopic> {
      */
 	private Date createTime;
 
+	private Integer deleted;
+
 	@Override
 	public Serializable pkVal() {
 		return this.id;

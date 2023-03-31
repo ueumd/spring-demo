@@ -11,3 +11,16 @@ server:
   port: 8091
   servlet:
     context-path: /api
+
+# mybatis-plus 全局配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+    # log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl #关闭sql日志
+  global-config:
+    db-config:
+      # 逻辑删除
+      logic-delete-field: deleted  # 全局逻辑删除的实体宇段名，配置后可不用@TableLogic注解 ==>  Preparing: SELECT * ai_topic WHERE deleted=0
+      logic-delete-value: 1        # 逻辑已删除
+      logic-not-delete-value: 0    # 逻辑未删除
+

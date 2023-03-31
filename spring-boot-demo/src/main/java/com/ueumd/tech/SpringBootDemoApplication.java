@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.ueumd.tech.mapper.*")
+@MapperScan(basePackages = "com.ueumd.tech.mapper.*") // 统一扫描mapper
 public class SpringBootDemoApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(SpringBootDemoApplication.class, args);
