@@ -10,45 +10,49 @@ public class ResponseDTO<T> implements Serializable {
 
     private static final long serialVersionUID = -943143895792475225L;
     private static final int SUCCESS = 0;
-    private static final String SUCCESS_MSG = "操作成功！";
-    private int errCode;
+    private static final String SUCCESS_MSG = "Succeed";
+
+    /**
+     * 状态码
+     */
+    private int code;
     private String message;
     private T data;
     private String traceId;
 
     public ResponseDTO() {
-        this.errCode = SUCCESS;
+        this.code = SUCCESS;
         this.message = SUCCESS_MSG;
     }
 
     public ResponseDTO(ExceptionCode exceptionCode) {
-        this.errCode = exceptionCode.getCode();
+        this.code = exceptionCode.getCode();
         this.message = exceptionCode.getMessage();
     }
 
-    public ResponseDTO(int errCode, String message) {
-        this.errCode = errCode;
+    public ResponseDTO(int code, String message) {
+        this.code = code;
         this.message = message;
     }
 
-    public ResponseDTO(int errCode, String message, T data) {
-        this.errCode = errCode;
+    public ResponseDTO(int code, String message, T data) {
+        this.code = code;
         this.message = message;
         this.data = data;
     }
 
     public ResponseDTO(T data) {
-        this.errCode = SUCCESS;
+        this.code = SUCCESS;
         this.message = SUCCESS_MSG;
         this.data = data;
     }
 
-    public int getErrCode() {
-        return this.errCode;
+    public int getcode() {
+        return this.code;
     }
 
-    public void setErrCode(int errCode) {
-        this.errCode = errCode;
+    public void setcode(int code) {
+        this.code = code;
     }
 
     public String getMessage() {
@@ -76,6 +80,6 @@ public class ResponseDTO<T> implements Serializable {
     }
 
     public String toString() {
-        return "ResponseDTO [errCode=" + this.errCode + ", message=" + this.message + ", data=" + this.data + "]";
+        return "ResponseDTO [code=" + this.code + ", message=" + this.message + ", data=" + this.data + "]";
     }
 }

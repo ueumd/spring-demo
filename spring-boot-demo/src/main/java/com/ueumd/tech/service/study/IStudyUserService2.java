@@ -8,7 +8,7 @@ import com.ueumd.tech.domain.study.StudyUser;
  * 推荐
  */
 
-public interface IStudyUserService2 extends IService<StudyUser> {
+public interface IStudyUserService2 {
 
     StudyUser getUserById(long id);
 }

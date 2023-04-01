@@ -31,3 +31,53 @@ GET http://localhost:8091/api/study/list
 
 ### getUserById
 GET http://localhost:8091/api/study/getUserById?id=200
+
+
+### ============= RequestBody 请求 ================================
+### getUserByJson
+POST http://localhost:8091/api/study/getUserByJson
+Content-Type: application/json
+
+{
+  "name": "springboot",
+  "age": 1
+}
+
+
+###
+POST http://localhost:8091/api/study/getUserByJsonList
+Content-Type: application/json
+
+[
+  {
+    "name": "springboot",
+    "age": 1
+  },
+  {
+    "name": "spring",
+    "age": 11
+  }
+]
+
+
+
+###
+POST http://localhost:8091/api/study/getUserByMap
+Content-Type: application/json
+
+{
+  "name": "springboot",
+  "age": 1
+}
+
+
+### ============= RequestParam 请求 ================================
+### ff
+GET http://localhost:8091/api/study/testRequestParam?id=200&name=spring&likes=go&likes=java
+
+
+###
+GET http://localhost:8091/api/study/testRequestParamHello?id=100&username=spring&likes=vue&likes=react
+
+###
+GET http://localhost:8091/api/study/testRequestParamHello?username=spring&likes=vue&likes=react

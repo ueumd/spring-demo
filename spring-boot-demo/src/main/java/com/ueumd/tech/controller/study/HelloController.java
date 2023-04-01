@@ -1,6 +1,7 @@
 package com.ueumd.tech.controller.study;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -13,6 +14,7 @@ public class HelloController {
 
     @ResponseBody
     @GetMapping("/getProjectName")
+    @CrossOrigin
     public String getProjectName() {
         return name;
     }
