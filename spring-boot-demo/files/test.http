@@ -22,3 +22,12 @@ GET http://localhost:8091/api/common/v1/getSystemDate
 
 ### getTopics
 GET http://localhost:8091/api/common/v1/getTopics?content=simple
+
+
+### =================================== studyController #########################
+
+### list
+GET http://localhost:8091/api/study/list
+
+### getUserById
+GET http://localhost:8091/api/study/getUserById?id=200

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ueumd.tech.mapper.study.StudyUserMapper">
+
+
+    <!--自定义方法-->
+    <select id="findMyUser" resultType="com.ueumd.tech.domain.study.StudyUser">
+        select * from study_user where id = #{id}
+    </select>
+
+    <!--自定方法结合条件构造器-->
+    <select id="findMyUserByWrapper" resultType="com.ueumd.tech.domain.study.StudyUser">
+        select * from study_user ${ew.customSqlSegment}
+    </select>
+
+</mapper>

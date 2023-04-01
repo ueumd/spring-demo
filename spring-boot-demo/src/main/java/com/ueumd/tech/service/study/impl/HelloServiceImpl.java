@@ -1,5 +1,6 @@
-package com.ueumd.tech.service.study;
+package com.ueumd.tech.service.study.impl;
 
+import com.ueumd.tech.service.study.IHelloService;
 import org.springframework.stereotype.Repository;
 
 /**

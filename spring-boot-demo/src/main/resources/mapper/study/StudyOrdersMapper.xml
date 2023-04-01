@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ueumd.tech.mapper.study.StudyOrdersMapper">
+
+    <select id="findAllOrders" resultType="com.ueumd.tech.domain.study.StudyOrders">
+        SELECT
+            o.*,u.`user_name`
+        FROM
+            study_user u, study_orders o
+        WHERE
+            o.`user_id` = u.`id`
+    </select>
+
+    <select id="findAllOrders2" resultType="com.ueumd.tech.domain.study.StudyOrders">
+        SELECT
+            o.*,u.`user_name`
+        FROM
+            study_user u, study_orders o
+        WHERE
+            o.`user_id` = u.`id`
+    </select>
+</mapper>
