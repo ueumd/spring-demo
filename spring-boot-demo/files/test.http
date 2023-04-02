@@ -81,3 +81,6 @@ GET http://localhost:8091/api/study/testRequestParamHello?id=100&username=spring
 
 ###
 GET http://localhost:8091/api/study/testRequestParamHello?username=spring&likes=vue&likes=react
+
+###
+GET http://localhost:8091/api/study/testRequestParamHello

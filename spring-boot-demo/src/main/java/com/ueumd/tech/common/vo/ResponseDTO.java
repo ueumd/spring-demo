@@ -47,11 +47,11 @@ public class ResponseDTO<T> implements Serializable {
         this.data = data;
     }
 
-    public int getcode() {
+    public int getCode() {
         return this.code;
     }
 
-    public void setcode(int code) {
+    public void setCode(int code) {
         this.code = code;
     }
 
