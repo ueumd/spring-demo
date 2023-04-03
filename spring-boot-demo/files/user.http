@@ -1,0 +1,16 @@
+
+
+###
+POST http://localhost:8092/api/user/login
+Content-Type: application/json
+
+{
+  "userName": "admin",
+  "password": "1234"
+}
+
+### getSystemDate
+GET http://localhost:8092/api/login/getSystemDate
+Authorization: Bearer {{auth_token}}
+
+###
