@@ -15,8 +15,8 @@
   })
 
   axios({
-    method: 'POST',
-    url: 'http://localhost:8092/api/common/v1/getSystemDate'
+    method: 'get',
+    url: 'http://localhost:8092/api/common/getSystemDate'
   }).then(res => {
     console.log(res);
   })
