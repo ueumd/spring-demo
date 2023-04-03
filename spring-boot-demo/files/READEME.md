@@ -29,3 +29,6 @@ nohup java -jar test.jar &　
 ## CORS Support
 - https://docs.spring.io/spring-boot/docs/2.7.10/reference/htmlsingle/#web.servlet.spring-mvc.cors
 - @CrossOrigin 可以持方法体和类上的配置
+
+## springboot + security + jwt 集成及理解
+https://zhuanlan.zhihu.com/p/600054878

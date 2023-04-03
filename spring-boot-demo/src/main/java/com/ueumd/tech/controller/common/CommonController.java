@@ -19,7 +19,7 @@ public class CommonController {
     private CommonConfigService commonConfigService;
 
 
-    @GetMapping(VersionValue.V1 + "getSystemDate")
+    @GetMapping("/getSystemDate")
     public ResponseDTO<String> getSystemDate() {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
         String now = df.format(System.currentTimeMillis());
