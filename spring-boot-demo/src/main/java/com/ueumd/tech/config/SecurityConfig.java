@@ -59,7 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                .antMatchers("/common/getSystemDate").permitAll()
+                .antMatchers("/common/**", "/study/**").permitAll()
                 //配置允许匿名访问的路径
                 .anyRequest().authenticated();
         // 解决跨域问题（重要）  只有在前端请求接口时才发现需要这个

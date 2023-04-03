@@ -2,6 +2,11 @@
 
 GET http://localhost:8092/api/getProjectName
 
+
+
+###
+GET http://localhost:8092/api/common/getSystemDate
+
 ###
 GET http://localhost:8092/api/getPerson
 
