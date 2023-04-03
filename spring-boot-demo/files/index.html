@@ -8,15 +8,15 @@
 <body>
 <script type="text/javascript">
   axios({
-    method: 'get',
-    url: 'http://localhost:8091/api/getProjectName'
+    method: 'post',
+    url: 'http://localhost:8092/api/getProjectName'
   }).then(res => {
     console.log(res);
   })
 
   axios({
-    method: 'get',
-    url: 'http://localhost:8091/api/common/v1/getSystemDate'
+    method: 'POST',
+    url: 'http://localhost:8092/api/common/v1/getSystemDate'
   }).then(res => {
     console.log(res);
   })

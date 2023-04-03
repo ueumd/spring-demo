@@ -28,8 +28,6 @@ public enum ExceptionCode {
 
 
 
-
-
     private int code;
 
     private String message;
