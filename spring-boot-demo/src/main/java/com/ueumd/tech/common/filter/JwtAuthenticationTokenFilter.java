@@ -1,5 +1,6 @@
 package com.ueumd.tech.common.filter;
 
+import com.ueumd.tech.common.annotation.JwtIgnore;
 import com.ueumd.tech.domain.login.LoginUser;
 import com.ueumd.tech.utils.JwtUtil;
 import com.ueumd.tech.utils.RedisCache;
@@ -10,6 +11,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.springframework.web.method.HandlerMethod;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -26,6 +28,19 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+
+//        if (handler instanceof HandlerMethod) {
+//            boolean isSafe = checkResourceSecurity(request, handler);
+//            if (!isSafe) return false;
+//            HandlerMethod handlerMethod = (HandlerMethod) handler;
+//            JwtIgnore jwtIgnore = handlerMethod.getMethodAnnotation(JwtIgnore.class);
+//            if (jwtIgnore != null) {
+//                //放行
+//                filterChain.doFilter(request, response);
+//                return;
+//            }
+//        }
+
         //获取token
         String token = request.getHeader("token");
         if (!StringUtils.hasText(token)) {

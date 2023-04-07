@@ -1,6 +1,7 @@
 package com.ueumd.tech.controller.common;
 
 import com.alibaba.fastjson.JSONObject;
+import com.ueumd.tech.common.annotation.JwtIgnore;
 import com.ueumd.tech.common.constant.CommonConstant;
 import com.ueumd.tech.common.constant.VersionValue;
 import com.ueumd.tech.common.vo.ResponseDTO;
@@ -19,6 +20,7 @@ public class CommonController {
     private CommonConfigService commonConfigService;
 
 
+    @JwtIgnore
     @GetMapping("/getSystemDate")
     public ResponseDTO<String> getSystemDate() {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
