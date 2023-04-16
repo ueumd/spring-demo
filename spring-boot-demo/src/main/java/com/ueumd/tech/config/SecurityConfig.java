@@ -77,35 +77,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //.antMatchers("/admin/**").hasRole("ADMIN");配置只有ADMIN 权限的用户才能访问该路由
     }
 
-    protected void configure2(HttpSecurity http) throws Exception {
-        http
-                //关闭csrf
-                .csrf().disable()
-                //不通过Session获取SecurityContext
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
-                .authorizeRequests()
-                // 对于登录接口 允许匿名访问
-                .antMatchers("/user/login").anonymous()
-                // .antMatchers("/testCors").hasAuthority("system:dept:list222")
-
-                // 除上面外的所有请求全部需要鉴权认证 认证后的请求都可以访问
-
-                .anyRequest().authenticated();
-
-        //添加过滤器
-        http.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
-
-        //配置异常处理器
-        http.exceptionHandling()
-                //配置认证失败处理器
-                .authenticationEntryPoint(authenticationEntryPoint).accessDeniedHandler(accessDeniedHandler);
-
-        //允许跨域
-        http.cors();
-    }
-
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {

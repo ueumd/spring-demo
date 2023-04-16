@@ -53,7 +53,7 @@ public class OKHttpTest {
     public void test2() throws IOException {
         OkHttpClient client = new OkHttpClient();
 
-        String url = "https://www.zhihu.com/api/v4/columns/c_1060581544644718592/items";
+        String url = "https://www.zhihu.com/api/v4/v columns/c_1060581544644718592/items";
 
         Request request = new Request.Builder()
                 .url(url)
